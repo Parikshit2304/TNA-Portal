@@ -540,7 +540,7 @@ export const TrainingApplication: React.FC = () => {
         >
           <button
             type="button"
-            onClick={() => navigate('/training-applications')}
+            onClick={() => navigate('/TrainingApplications')}
             className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors"
           >
             Cancel

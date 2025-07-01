@@ -8,6 +8,7 @@ import authRoutes from './routes/auth.js';
 import userRoutes from './routes/users.js';
 import surveyRoutes from './routes/surveys.js';
 import analyticsRoutes from './routes/analytics.js';
+import trainingRoutes from './routes/training.js';
 
 const app = express();
 const prisma = new PrismaClient();
@@ -32,6 +33,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/surveys', surveyRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/training', trainingRoutes);
 
 // Health check
 app.get('/api/health', (req, res) => {
